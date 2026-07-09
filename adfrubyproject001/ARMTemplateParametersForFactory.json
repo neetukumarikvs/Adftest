@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfrubyproject001"
+		},
+		"LS_LOOKUP_FILTER_accountKey": {
+			"value": ""
+		},
+		"LS_lookup_accountKey": {
+			"value": ""
+		},
+		"LS_LOOKUP_FILTER_properties_typeProperties_url": {
+			"value": "https://adlsdevrubyproject1.dfs.core.windows.net/"
+		},
+		"LS_lookup_properties_typeProperties_url": {
+			"value": "https://adlsdevrubyproject1.dfs.core.windows.net/"
+		}
+	}
+}
