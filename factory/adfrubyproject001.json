@@ -1,0 +1,15 @@
+{
+	"name": "adfrubyproject001",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7f5fd189-9522-48fb-bc59-1a178cb6cdba",
+		"tenantId": "67fe8d92-4cac-4d0f-a142-a3959f93ecbe"
+	}
+}
