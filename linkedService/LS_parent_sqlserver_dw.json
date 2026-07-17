@@ -1,0 +1,21 @@
+{
+	"name": "LS_parent_sqlserver_dw",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-CSMFBKR\\SQLEXPRESS",
+			"database": "Migrationproject",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "Neetu",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmOTA3NGI3Zi00Njk2LTQ0NTYtOTE1NC1jYTc5Y2JmYjA2NjUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
