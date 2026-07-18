@@ -1,0 +1,21 @@
+{
+	"name": "DS_LKUP_MAX_VALUE",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-CSMFBKR\\SQLEXPRESS",
+			"database": "RetailDW_Dev",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "Neetu",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1YzZmMzc0NS01ODQ0LTQwYWEtYmM4OS01NzQxYjhhOGI3MDMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
