@@ -1,0 +1,23 @@
+{
+	"name": "DS_sqltable_Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_sqltable_Parquet1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
