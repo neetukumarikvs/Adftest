@@ -1,0 +1,20 @@
+{
+	"name": "DS_Source_FOR_CHILD_COPY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Source_FOR_CHILD_COPY",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Schemaname": {
+				"type": "string"
+			},
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
