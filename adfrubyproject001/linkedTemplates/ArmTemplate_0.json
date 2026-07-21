@@ -794,7 +794,7 @@
 									}
 								}
 							},
-							"firstRowOnly": true
+							"firstRowOnly": false
 						}
 					},
 					{
@@ -811,7 +811,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"expression": {
-								"value": "@or(equals(pipeline().parameters.LastLoadValue, null), greater(int(activity('LKUP_MAX_VALUE').output.firstRow.MaxValue), int(pipeline().parameters.LastLoadValue)))",
+								"value": "@or(equals(pipeline().parameters.LastLoadValue, null), greater(int(activity('LKUP_MAX_VALUE').output.value[0].MaxValue), int(pipeline().parameters.LastLoadValue)))",
 								"type": "Expression"
 							},
 							"ifTrueActivities": [
@@ -1005,6 +1005,7 @@
 								"value": "@activity('LKUP_SQLTABLE_WATERMARK_DW').output.value",
 								"type": "Expression"
 							},
+							"isSequential": false,
 							"activities": [
 								{
 									"name": "EXEC_CHILD_PIPELINE",
