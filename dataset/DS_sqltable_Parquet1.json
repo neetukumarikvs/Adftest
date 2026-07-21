@@ -15,10 +15,15 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileSystem": {
-					"value": "@concat(dataset().Table_Name,'/',formatDateTime(utcNow(),'yyyy/MM/dd’))\n",
+				"fileName": {
+					"value": "@concat(dataset().TableName,'_',formatDateTime(utcNow(),'yyyyMMddHHmmss'),'.parquet')",
 					"type": "Expression"
-				}
+				},
+				"folderPath": {
+					"value": "@concat(dataset().TableName,'/',formatDateTime(utcNow(),'yyyy/MM/dd'))",
+					"type": "Expression"
+				},
+				"fileSystem": "retaildw"
 			},
 			"compressionCodec": "snappy"
 		},
